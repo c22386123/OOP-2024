@@ -11,6 +11,7 @@ public class HelloProcessing extends PApplet
 	}
 
 	public void setup() {
+		/* 
 		colorMode(HSB);
 		background(0);
 
@@ -27,13 +28,13 @@ public class HelloProcessing extends PApplet
 		y2dir = random(-range, range);
 
 		smooth();
-		
+		*/
 	}
 
 	float x1, y1, x2, y2;
 	float x1dir, x2dir, y1dir, y2dir;
 	float c = 0;
-	
+	/* 
 	public void draw()
 	{	
 		strokeWeight(2);
@@ -63,5 +64,20 @@ public class HelloProcessing extends PApplet
 		{
 			y2dir = - y2dir;
 		}
+	}
+	*/
+
+	public void draw() {
+		background(255, 0, 0);
+		circle(250, 250, 400);
+		fill(255, 255, 0);
+		triangle(250,50,100,400,400,400);
+		fill(0, 200, 255);
+		ellipse(250, 225, 300, 150);
+		fill(0);
+		circle(250, 225, 100);
+		fill(250);
+		circle(250, 225, 50);
+		fill(50);
 	}
 }
